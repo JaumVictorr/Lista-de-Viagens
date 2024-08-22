@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVC</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <h1>Adicionar Viagem</h1>
+    <form  action="/adicionar_viagem" method="POST">
+        <label class="forms" for="nome">Nome:</label><br>
+        <input class="camp" type="text" id="nome" name="nome" required><br>
+        <label class="forms" for="local">Local:</label><br>
+        <input class="camp" type="text" id="local" name="local" required><br>
+        <label class="forms" for="data">Data:</label><br>
+        <input class="camp" type="text" id="data" name="data" required><br>
+        <input class="inser" type="submit" value="Adicionar">
+    </form>
+</body>
+</html>

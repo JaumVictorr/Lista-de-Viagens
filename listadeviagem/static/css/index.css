@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 185, 56);
+}
+h1{
+    color: blue;
+    text-align: center;
+    font-size: 75px;
+}
+.adc{
+    padding: 30px 100px;
+    background-color: blue;
+    border-radius: 40px;
+    color: azure;
+    margin: 50px 500px;
+}
+
+.forms{
+    color: rgb(0, 0, 153);
+    font-size: 23px;
+    background-color: white;
+}
+
+.camp{
+    background-color: white;
+}
+
+.inser{
+    padding: 10px 15px;
+    margin: 10px 30px;
+    background-color: blue;
+    color: white;
+}
+
+form {
+    margin: 30px 400px;
+    border-radius: 45px;
+    background-color: white;
+    padding: 50px 150px;
+}
+
+.edit{
+    margin-top: 20px;
+    padding: 7px 15px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    background-color: blue;
+    color: white;
+    margin: 20px 550px;
+}
+
+.inform{
+    text-align: center;
+    background-color: rgba(255, 234, 0, 0.911);
+    font-size: 20px;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVC</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <h1>Editar Viagem</h1>
+    <form action="/editar_viagem/{{ viagem[0] }}" method="POST">
+        <label class="forms" for="nome">Nome:</label><br>
+        <input class="camp" type="text" id="nome" name="nome" value="{{ viagem[1] }}"><br>
+        <label class="forms" for="local">Local:</label><br>
+        <input class="camp" type="text" id="local" name="local" value="{{ viagem[2] }}"><br>
+        <label class="forms" for="data">Data:</label><br>
+        <input class="camp" type="text" id="data" name="data" value="{{ viagem[3] }}"><br>
+        <input class="inser" type="submit" value="Salvar">
+    </form>
+</body>
+</html>

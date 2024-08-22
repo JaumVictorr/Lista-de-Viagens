@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVC</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+<body>
+    <h1>Lista de Viagens</h1>
+    <ul class="inform">
+        {% for viagem in viagens %}
+        <li class="inform ">{{ viagem[1] }} - {{ viagem[2] }} - {{ viagem[3] }}{% if viagem[4] %} {% endif %}
+            <ul>
+                <li><a href="/editar_viagem/{{ loop.index0 }}"><button class="edit">Editar</button></a></li>
+                <li><a href="/apagar_viagem/{{ loop.index0 }}"><button class="edit">Apagar</button ></a></li>
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/adicionar_viagem"><button class="adc">Adicionar Viagem</button></a>
+</body>
+</html>
